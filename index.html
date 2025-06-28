@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Social</title>
+</head>
+<body>
+
+    <h1>Drustvena mreza</h1>
+
+    <div class="main-wrapper">
+        <form id="login-form">
+            <h2>Login</h2>
+
+            <div class="input-wrapper">
+                <label for="loginEmail">Email:</label>
+                <input type="email" name="loginEmail" id="loginEmail" placeholder="example@gmail.com">
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="loginPassword">Password:</label>
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="********">
+            </div>
+
+            <button class="btn">Log in</button>
+        </form>
+    </div>
+
+    <div class="no-acc-register">
+        <p>Don't have account?</p>
+        <button class="btn" id="reg-btn" onclick="openModal()">Register</button>
+    </div>
+
+    <div class="custom-modal">
+        <button class="btn close-btn" onclick="closeModal()">X</button>
+
+        <form class="registration-form" id="registrationForm">      
+            <div class="input-wrapper">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="registerUsername" placeholder="username123">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="registerEmail">Email:</label>
+                <input type="email" name="registerEmail" id="registerEmail" placeholder="example@gmail.com">
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="registerPassword">Password:</label>
+                <input type="password" name="registerPassword" id="registerPassword" placeholder="********">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="********">
+            </div>
+
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="js/User.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
