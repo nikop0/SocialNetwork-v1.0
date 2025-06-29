@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-wrapper {
+    width: 15%;
+    border: 1px solid black;
+}
+
+
+
+.posts {
+    width: 85%;
+    border: 1px solid black;
+}
