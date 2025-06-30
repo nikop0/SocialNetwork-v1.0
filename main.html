@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialMain</title>
-</head>
-<body>
-    <h1>You are in!</h1>
     <link rel="stylesheet" href="mainStyle.css">
     <title>SocialMain</title>
 </head>
+
 <body>
     <div class="container">
         <div class="profile-wrapper">
@@ -17,18 +15,29 @@
             <p class="profile-username">username</p>
             <button class="btn">Log out</button>
         </div>
-        <div class="posts">
-            <div class="create-post">
-                <input type="text">
-                <button class="btn" id="post-btn">POST</button>
+        <div class="main-content">
+            <form class="create-post">
+                <input type="text" id="post-input"><button class="btn" id="post-btn" type="submit">POST</button>
+            </form>
+            <div class="posts">
+                <div class="single-post">
+                    <div class="post-header">
+                        <p>username</p>
+                    </div>
+                    <p>Single post</p>
+                    <div class="post-footer">
+                        <p>1</p>
+                        <button id="like-btn" onclick="likePost()"><img src="img/like.png" alt="like-img"></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
     <script src="js/Session.js"></script>
-    
+    <script src="js/Post.js"></script>
     <script src="js/User.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

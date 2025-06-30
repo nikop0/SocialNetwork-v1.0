@@ -11,6 +11,7 @@ body {
     align-items: start;
     justify-content: center;
     font-family: sans-serif;
+    background-color: #000000;
 }
 
 .container {
@@ -18,18 +19,65 @@ body {
     width: 100%;
     padding: 10px;
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 16px;
 }
 
 .profile-wrapper {
     width: 15%;
-    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
 }
 
+form {
+    margin-bottom: 24px;
+}
 
+.main-content {
+    width: 85%;
+}
 
 .posts {
-    width: 85%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.create-post {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.create-post input {
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    padding: 10px;
+}
+
+.create-post button {
+    padding: 10px;
+    border: none;
+}
+
+.single-post {
+    color: white;
+    background-color: rgb(128, 128, 128);
+    font-size: 18px;
+    padding: 20px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+#like-btn {
+    background-color: transparent;
+    border: none;
 }

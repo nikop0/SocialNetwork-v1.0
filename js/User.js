@@ -35,7 +35,6 @@ class User {
                 let loginSuccessful = false;
                 data.forEach(db_user => {
                     if (db_user.email === this.email && db_user.password === this.password) {
-                        console.log(this.email + ' ' + this.password + ' ' + db_user.user_id)
                         let session = new Session();
                         session.user_id = db_user.id;
                         session.startSession();
